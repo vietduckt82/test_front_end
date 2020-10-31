@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.spec.js has the expected html structure 1`] = `
+<div
+  class="wapper"
+  data="[object Object]"
+>
+  <v-container>
+    <v-row>
+      <h1>
+        TOTAL COVID 19
+      </h1>
+       
+      <div
+        class="total"
+      >
+        <table>
+          <tr>
+            <td>
+              NewConfirmed
+            </td>
+             
+            <td>
+              
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              NewDeaths
+            </td>
+             
+            <td>
+              
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              NewRecovered
+            </td>
+             
+            <td>
+              
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              TotalConfirmed
+            </td>
+             
+            <td>
+              
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              TotalDeaths
+            </td>
+             
+            <td>
+              
+            </td>
+          </tr>
+           
+          <tr>
+            <td>
+              TotalRecovered
+            </td>
+             
+            <td>
+              
+            </td>
+          </tr>
+        </table>
+      </div>
+       
+      <h3>
+        List Country
+      </h3>
+       
+      <div
+        class="search-page"
+      >
+        <div
+          class="seach"
+        >
+          <img
+            src=""
+          />
+           
+          <input
+            class="pd-input"
+            name="seach"
+            placeholder="Search Country Name"
+            type="text"
+          />
+        </div>
+      </div>
+       
+      <table
+        class="list-country"
+      >
+        <!---->
+      </table>
+    </v-row>
+  </v-container>
+</div>
+`;

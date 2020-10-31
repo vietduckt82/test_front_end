@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListCountry.spec.js has the expected html structure 1`] = `
+<div>
+  <h3>
+    List Country
+  </h3>
+   
+  <div
+    class="search-page"
+  >
+    <div
+      class="seach"
+    >
+      <img
+        src=""
+      />
+       
+      <input
+        class="pd-input"
+        name="seach"
+        placeholder="Search Country Name"
+        type="text"
+      />
+    </div>
+  </div>
+   
+  <table
+    class="list-country"
+  >
+    <tbody>
+      <tr>
+        <th>
+          Country
+        </th>
+         
+        <th>
+          NewConfirmed
+        </th>
+         
+        <th>
+          NewDeaths
+        </th>
+         
+        <th>
+          NewRecovered
+        </th>
+         
+        <th>
+          TotalConfirmed
+        </th>
+         
+        <th>
+          TotalDeaths
+        </th>
+         
+        <th>
+          TotalRecovered
+        </th>
+         
+        <th>
+          Action
+        </th>
+      </tr>
+       
+      <tr>
+        <td>
+          Viet Nam
+        </td>
+         
+        <td>
+          
+        </td>
+         
+        <td>
+          
+        </td>
+         
+        <td>
+          
+        </td>
+         
+        <td>
+          
+        </td>
+         
+        <td>
+          
+        </td>
+         
+        <td>
+          
+        </td>
+         
+        <td>
+          <router-link
+            to="/country/undefined"
+          >
+            Detail
+          </router-link>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

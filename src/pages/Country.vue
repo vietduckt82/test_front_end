@@ -1,51 +1,38 @@
 <template>
-    <div>
-        <h3>All Day</h3>
-        <table class="list-date">
-            <tbody v-if="posts && posts.length">
-            <tr>
-                <th>Country</th>
-                <th>Confirmed</th>
-                <th>Deaths</th>
-                <th>Recovered</th>
-                <th>Active</th>
-                <th>Date</th>
-            </tr>
-            <tr v-for="post in posts.reverse()" :key="post.id">
-                <td>{{ post.Country }}</td>
-                <td>{{ post.Confirmed }}</td>
-                <td>{{ post.Deaths }}</td>
-                <td>{{ post.Recovered }}</td>
-                <td>{{ post.Active }}</td>
-                <td>{{ post.Date }}</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+  <div>
+    <ShowListDate :data="listDate" />
+  </div>
 </template>
 <script>
-import axios from "axios";
+import { mapActions } from "vuex";
+import ShowListDate from "@/components/ShowListDate";
 export default {
-    props: {
-    msg: String,
+  components: {
+    ShowListDate,
   },
   data() {
     return {
       posts: {},
       errors: [],
+      listDate: []
     };
   },
-  created() {
-    axios
-      .get(process.env.VUE_APP_API + "/live/country/"+this.$route.params.slug)
-      .then((response) => {
-        this.posts = response.data;
-      })
-      .catch((e) => {
-        this.errors.push(e);
+  methods: {
+    ...mapActions({
+      getListBuyCountry: "getListBuyCountry",
+    }),
+    async initListCountry() {
+      const response = await this.getListBuyCountry({
+        slug: this.$route.params.slug,
       });
+      if (!response.ok) return alert("Failed");
+      this.listDate = response.data;
+    },
   },
-}
+  created() {
+    this.initListCountry();
+  },
+};
 </script>
 <style scoped>
 .total table {

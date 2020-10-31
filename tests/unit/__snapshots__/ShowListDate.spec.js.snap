@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowListDate.spec.js has the expected html structure 1`] = `
+<div>
+  <v-container>
+    <v-row>
+      <v-col
+        cols="12"
+        sm="12"
+      >
+        <h3>
+          All Day
+        </h3>
+         
+        <v-data-table
+          headers="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+          id:list_page=""
+          items="[object Object]"
+          items-per-page="10"
+          sort-by="Date"
+          sort-desc="true"
+        />
+      </v-col>
+    </v-row>
+  </v-container>
+</div>
+`;

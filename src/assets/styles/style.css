@@ -1,0 +1,83 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+.total {
+    margin: 0 auto;
+}
+.total table {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  .total table tr {
+      border-bottom: 1px solid #ccc;
+  }
+  .total table tr td {
+    padding: 10px;
+  }
+  .total table tr td:first-child {
+      text-align: left;
+      font-weight: bold;
+  }
+  table.list-country {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table.list-country tr td {
+    border: 1px solid #000;
+  }
+  table.list-country th {
+    background: #03a9f4;
+    color: #fff;
+    padding: 10px;
+    border-left: 1px solid #ffffff;
+  }
+  table.list-country th:first-child {
+    border: none;
+  }
+  table.list-country tr:nth-child(even) {
+    background: #ccc;
+  }
+  table.list-country tr:nth-child(odd) {
+    background: #fff;
+  }
+  .search-page {
+      width: 100%;
+      padding: 10px;
+      overflow: auto;
+  }
+  .seach {
+      float: right;
+  }
+  .seach .pd-input {
+    height: 35px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .seach img {
+      margin-top: 5px;
+      margin-right: 10px;
+      float: left;
+  }
+  h3,h1 {
+    margin: 40px 0;
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }
